@@ -1,0 +1,26 @@
+.home{
+    display: flex;
+    height: calc(90vh - 58.4px);
+    width: 100vw;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.h-left{
+    height: 100%;
+    width: 50vw;
+    top: 0;
+    z-index: -1;
+    position: absolute;
+    background-color: #b8dcf1;
+}
+.h-right{
+    /* color: d; */
+    height: 100%;
+    width: 50vw;
+    top: 0;
+    right: 0;
+    z-index: -1;
+    position: absolute;
+    background-color: white(50, 18, 18);
+}

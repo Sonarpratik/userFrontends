@@ -1,0 +1,66 @@
+.a-con{
+    background-color: #f8f9fa;
+    height: calc(100vh - 58.4px);
+    display: flex;
+    width: 100vw;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+.a-box
+{
+    background-color: white;
+    box-shadow: 10px 5px 27px -8px rgba(0,0,0,0.64);
+    -webkit-box-shadow: 10px 5px 27px -8px rgba(0,0,0,0.64);
+    -moz-box-shadow: 10px 5px 27px -8px rgba(0,0,0,0.64);
+    height: 500px;
+    width: 55vw;
+display: flex;
+position: relative;
+flex-direction: column;
+/* align-items: center; */
+justify-content: space-between;
+
+}
+.up-box{
+padding: 40px 100px;
+}
+.down-box{
+display: flex;
+padding: 40px 200px;
+    
+}
+.a-left{
+    flex: 1;
+
+}
+.a-right{
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    /* padding: 0px 100px; */
+}
+.a-right input,.a-right span{
+    outline: none;
+    border: none;
+    /* border-bottom: 2px solid black; */
+    margin-bottom: 20px;
+}
+.a-right input {
+    color: #01c2c2;
+}
+
+.btn-move{
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background: none;
+    padding: 5px 10px;
+}
+.img-move{
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
