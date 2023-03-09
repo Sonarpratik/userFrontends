@@ -7,6 +7,7 @@ const Logout = () => {
   //promises
   useEffect(() => {
     fetch("/logout", {
+      mode: 'no-cors',
       method: "GET",
       headers: {
         Accept: "application/json",

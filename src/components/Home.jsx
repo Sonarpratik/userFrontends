@@ -6,7 +6,8 @@ const Home = () => {
     const [name, setName] = useState();
     const callAboutPage = async () => {
       try {
-        const response = await fetch("/about", {
+        const response = await fetch("https://userbackend.sonarpratik.repl.co/about", {
+          mode: 'no-cors',
           method: "GET",
           headers: {
             Accept: "application/json",

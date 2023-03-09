@@ -24,11 +24,12 @@ const Appoint = () => {
   const [userData, setUserData] = useState();
   const [phone, setPhone] = useState();
   const [email, setEmail] = useState();
-
+  const andf = "https://userbackend.sonarpratik.repl.co"
   const callAboutPage = async () => {
     //get all login user data
     try {
       const response = await fetch("/about", {
+        mode: 'no-cors',
         method: "GET",
         headers: {
           Accept: "application/json",
@@ -59,6 +60,7 @@ const Appoint = () => {
     //get all appointments time
     try {
       const response = await fetch("/time", {
+        mode: 'no-cors',
         method: "GET",
         headers: {
           Accept: "application/json",
@@ -77,7 +79,8 @@ const Appoint = () => {
     e.preventDefault();
     //set start and end time of an appointments
     try {
-      const response = await fetch("http://localhost:4000/appoint", {
+      const response = await fetch("https://userbackend.sonarpratik.repl.co/appoint", {
+   
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -105,7 +108,8 @@ const Appoint = () => {
 
   const singleOwner = async () => {
     try {
-      const response = await fetch("http://localhost:4000/find", {
+      const response = await fetch("/find", {
+        mode: 'no-cors',
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -129,7 +133,8 @@ const Appoint = () => {
   const deleteit = async (a) => {
     //delete particular time constraint
     try {
-      const response = await fetch(`http://localhost:4000/scam/${a}`, {
+      const response = await fetch(`https://userbackend.sonarpratik.repl.co/scam/${a}`, {
+      
         method: "DELETE",
         headers: {
           "Content-Type": "application/json",

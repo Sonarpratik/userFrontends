@@ -16,6 +16,7 @@ const About = () => {
   const callAboutPage = async () => {
     try {
       const response = await fetch("/about", {
+        mode: 'no-cors',
         method: "GET",
         headers: {
           Accept: "application/json",
@@ -46,7 +47,8 @@ const About = () => {
     e.preventDefault();
     try {
       const response = await fetch("/about", {
-        method: "PATCH",
+      mode: 'no-cors',  
+      method: "PATCH",
         headers: {
           Accept: "application/json",
           "Content-Type": "application/json",
